@@ -1,0 +1,85 @@
+@import "normalize";
+@import "bourbon/bourbon";
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+html, body {
+	height: 100%;
+	font-size: 62.5%;
+	line-height: 1.61;
+	position: relative;
+}
+
+body {
+	font-size: 16px;
+	font-size: 1.6rem;
+}
+
+input {
+	background-image: none; // FF
+}
+
+.skip-to-content {
+	position: absolute;
+	left: -9999em;
+
+	&:focus,
+	&:active {
+		position: relative;
+		left: 0;
+	}
+}
+
+.cookies {
+	position: absolute;
+	bottom: 0;
+
+	display: none;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+.preload {
+	display: none !important;
+}
+
+@import "variables";
+@import "uikit";
+@import "forms";
+@import "ie";
