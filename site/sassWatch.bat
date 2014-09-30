@@ -1,1 +1,0 @@
-sass --sourcemap --watch styles/sass/global.scss:styles/global.css --style compressed
