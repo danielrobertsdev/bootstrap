@@ -11,7 +11,7 @@
 
 	<title></title>
 	
-	<link rel="stylesheet" href="styles/global.css">
+	<link rel="stylesheet" href="build/styles/global.css">
 
 	<!--[if lt IE 9]>
 		<script type="text/javascript" src="js/html5shiv.js"></script>

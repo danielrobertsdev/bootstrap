@@ -1,6 +1,7 @@
-if (!window.console) console = { log: function() {} };
-
 $(document).ready(function() {
+	"use strict";
+
+	console.log("%c Hi there! \\o/", "color: #bada55; font-weight: bold; background-color: #222; padding: 5px; line-height: 2;");
 
 	// COOKIE
 	var cookieAccept = function (){
@@ -23,28 +24,9 @@ $(document).ready(function() {
 			$cookies.css('bottom', - distance - 60);
 		});
 	};
-	cookieAccept();
+	// cookieAccept();
 	
 	// Init Functions
-	FastClick.attach(document.body);
-
-	var prepareCode = function() {
-		var $html = $(".html code pre"),
-			code;
-
-		$.each($html, function(e){
-			var $this = $(this);
-
-			code = $this.html().replace(/[<]/g,"&lt;");
-
-			console.log($this);
-			$this.append(code);//code;
-		});
-		
-
-		
-		// $html.html() = code;
-	};
-	prepareCode();
+	// FastClick.attach(document.body);
 
 });
