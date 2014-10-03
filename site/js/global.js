@@ -36,26 +36,33 @@ $(document).ready(function() {
 			$container = $("#main-nav-container"),
 			$navList = $("#main-nav"),
 			listHeight = $navList.height(),
-			speed = 100,
+			speed = 200,
 			isHidden = false,
 			animatePosition = listHeight;
 
 		// Hide menu
-		$container.css({"bottom": "-"+listHeight+"px" });
+		// $container.css({"bottom": "-"+listHeight+"px" });
+		$navList.css({"height": "0px" });
 		isHidden = true;
+
+		console.log(listHeight);
 
 		$showHide.on("click", function(){
 
 			if (isHidden) {
-				animatePosition = 0;
+				animatePosition = listHeight;
 				isHidden = false;
 			} else {
-				animatePosition = listHeight;
+				animatePosition = 0;
 				isHidden = true;
 			}
 
-			$container.animate({
-				"bottom": "-"+animatePosition
+			// $container.animate({
+			// 	"bottom": "-"+animatePosition
+			// }, speed);
+
+			$navList.animate({
+				"height": animatePosition
 			}, speed);
 		});
 	};
