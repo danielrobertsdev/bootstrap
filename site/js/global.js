@@ -29,4 +29,36 @@ $(document).ready(function() {
 	// Init Functions
 	// FastClick.attach(document.body);
 
+
+	// Navigation menu
+	var navigation = function() {
+		var $showHide = $("#show-main-nav"),
+			$container = $("#main-nav-container"),
+			$navList = $("#main-nav"),
+			listHeight = $navList.height(),
+			speed = 100,
+			isHidden = false,
+			animatePosition = listHeight;
+
+		// Hide menu
+		$container.css({"bottom": "-"+listHeight+"px" });
+		isHidden = true;
+
+		$showHide.on("click", function(){
+
+			if (isHidden) {
+				animatePosition = 0;
+				isHidden = false;
+			} else {
+				animatePosition = listHeight;
+				isHidden = true;
+			}
+
+			$container.animate({
+				"bottom": "-"+animatePosition
+			}, speed);
+		});
+	};
+	navigation();
+
 });

@@ -22,7 +22,7 @@ module.exports = function(grunt) {
 				tasks: ['uglify']
 			}
 	    ,css: {
-        files: ['styles/sass/global.scss'],
+        files: ['styles/sass/*.scss'],
         tasks: ['buildcss']
 	    }
 		}

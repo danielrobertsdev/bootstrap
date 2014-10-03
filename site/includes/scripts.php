@@ -7,4 +7,10 @@
 <!-- <script type="text/javascript" src="scripts/modernizr.full.min.js"></script> -->
 <!-- <script type="text/javascript" src="js/fastclick.js"></script> -->
 <!-- <script type="text/javascript" src="js/jquery.cookie.js"></script> -->
-<script type="text/javascript" src="build/js/global.min.js"></script>
+
+
+<script type="text/javascript" src="js/global.js"></script>
+
+
+<!-- Production -->
+<!-- <script type="text/javascript" src="build/js/global.min.js"></script> -->

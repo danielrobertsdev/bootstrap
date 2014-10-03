@@ -1,0 +1,57 @@
+.main-nav-container {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+$menuButtonWidth: 5em;
+$menuButtonHeight: $menuButtonWidth/2;
+
+.menu-button-container {
+	margin: auto;
+	height: $menuButtonHeight;
+	width: $menuButtonWidth;
+	overflow: hidden;
+}
+
+.show-main-nav {
+	border: none;
+	background-color: transparent;
+	color: #ccc;
+	display: block;
+	background-color: #000;
+	opacity: .3;
+	border-radius: 100%;
+	width: $menuButtonWidth;
+	height: $menuButtonWidth;
+	position: relative;
+}
+
+.menu-button-text {
+	position: absolute;
+	top: $menuButtonWidth/6;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.main-nav-list {
+	background-color: #000;
+}
+
+.main-nav-item {
+	border-bottom: solid 1px $lightTextColor;
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+}
+
+.main-nav-link {
+	display: block;
+	width: 100%;
+	color: #ccc;
+	text-align: center;
+	padding: .25em;
+	color: $lightTextColor;
+}
