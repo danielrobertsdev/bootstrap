@@ -41,11 +41,8 @@ $(document).ready(function() {
 			animatePosition = listHeight;
 
 		// Hide menu
-		// $container.css({"bottom": "-"+listHeight+"px" });
 		$navList.css({"height": "0px" });
 		isHidden = true;
-
-		console.log(listHeight);
 
 		$showHide.on("click", function(){
 
@@ -56,10 +53,6 @@ $(document).ready(function() {
 				animatePosition = 0;
 				isHidden = true;
 			}
-
-			// $container.animate({
-			// 	"bottom": "-"+animatePosition
-			// }, speed);
 
 			$navList.animate({
 				"height": animatePosition

@@ -35,6 +35,10 @@ $menuButtonHeight: $menuButtonWidth/2;
 	text-align: center;
 }
 
+.main-nav {
+	overflow: hidden;
+}
+
 .main-nav-list {
 	background-color: #000;
 }
@@ -54,4 +58,48 @@ $menuButtonHeight: $menuButtonWidth/2;
 	text-align: center;
 	padding: .25em;
 	color: $lightTextColor;
+}
+
+// Menu at top - hidden
+@media screen and (min-width: 600px) {
+	.main-nav-container {
+		top: 0;
+		right: 0;
+	}
+
+	.menu-button-container {
+		margin-right: 0;
+	}
+
+	.show-main-nav {
+		top: -$menuButtonHeight;
+		background-color: transparent;
+		opacity: 1;
+	}
+
+	.menu-button-text {
+		top: auto;
+		color: $darkTextColor;
+	}
+}
+
+// Menu at top - visible
+@media screen and (min-width: 900px) {
+	.main-nav {
+		height: auto !important;
+	}
+
+	.menu-button-container {
+		display: none;
+	}
+
+	.main-nav-list {
+		background-color: transparent;
+		text-align: right;
+	}
+
+	.main-nav-item {
+		border-bottom: none;
+		display: inline-block;
+	}
 }
